@@ -10,6 +10,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  *
  * @ORM\Table(name="cron_job", uniqueConstraints={@ORM\UniqueConstraint(name="un_name", columns={"name"})})
  * @ORM\Entity(repositoryClass="Cron\CronBundle\Entity\CronJobRepository")
+ * @ORM\MappedSuperclass()
  */
 class CronJob
 {
